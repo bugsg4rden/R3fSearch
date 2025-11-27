@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RefSearch</title>
 </head>
+<script>
+document.querySelectorAll('a').forEach(a => a.classList.add('nav-link'));
+</script>
 <body>
     <h1 class="text">RefSearch</h1>
     <hr>
-    
+    <a class="nav-link" href="index.html">Home</a> |
+    <a class="nav-link" href="about.html">About</a> |
+    <a class="nav-link" href="contact.html">Contact</a>
 </body>
-</html>
 
 <style>
     body {
@@ -19,8 +23,22 @@
     .text {
         color: ghostwhite;
         text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: 50px;
+    }
+    .nav {
+        text-align: center;
+        margin: 12px 0;
+    }
+    .nav-link {
+        display: inline-block;
+        margin: 0 8px;
+        color: ghostwhite;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav-link:hover {
+        text-decoration: underline;
     }
 </style>
